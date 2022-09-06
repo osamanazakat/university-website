@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 6%;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+  font-size: 50px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 34px;
+  border: 1px solid #fff;
+  display: inline-block;
+  background: transparent;
+  transition: 1s;
+}
+
+.hero-btn:hover {
+  background-color: #f44336;
+  border: 1px solid #f44336;
+}
+
+nav .fa {
+  display: none;
+}
+
+/* course */
+.course {
+  width: 80%;
+  padding-top: 100px;
+  text-align: center;
+  margin: auto;
+}
+
+.course h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.course p {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #777;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.course-col {
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  background-color: #fff3f3;
+  flex-basis: 31%;
+  transition: 0.5s;
+}
+
+.course-col h3 {
+  margin: 10px 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+}
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.campus h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.campus p {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #777;
+}
+
+.campus-col {
+  border-radius: 10px;
+  flex-basis: 32%;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.facilities h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.facilities p {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #777;
+}
+
+.facilities-col {
+  border-radius: 10px;
+  flex-basis: 32%;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-col p {
+  padding: 0;
+}
+
+.facilities-col h3 {
+  margin: 15px auto;
+  font-weight: 600;
+}
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.testimonials-col {
+  border-radius: 10px;
+  flex-basis: 48%;
+  margin-bottom: 30px;
+  text-align: left;
+  background-color: #fff3f3;
+  cursor: pointer;
+  display: flex;
+  padding: 25px;
+}
+
+.testimonials-col img {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.testimonials-col h3 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+.cta {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 100px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/banner2.jpg');
+}
+.cta h1 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.footer {
+  width: 100%;
+  margin: 25px auto;
+  text-align: center;
+  padding: 0 30px;
+}
+.footer h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 24px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    background-color: #f44336;
+    width: 150px;
+    text-align: left;
+    height: 100vh;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    margin: 10px;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .testimonials-col img {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+  .cta h1 {
+    font-size: 24px;
+  }
+}

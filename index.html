@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- css link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/7d305f3ac8.js" crossorigin="anonymous"></script>
+  <title>University Website</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt=""></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">COURSE</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTECT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>World's Biggest University</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> ut labore et dolore magna aliqua.</p>
+      <a class="hero-btn" href="#">Visit Us to Know More</a>
+    </div>
+  </section>
+  <!-- course -->
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Ut enim ad minim veniam, quis nostrud</p>
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermidiate</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+      <div class="course-col">
+        <h3>Intermidiate</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+      <div class="course-col">
+        <h3>Intermidiate</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+  </section>
+  <section class="campus">
+    <h1>Our Campuses</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="images\london.png" alt="">
+      </div>
+      <div class="campus-col">
+        <img src="images\washington.png" alt="">
+      </div>
+      <div class="campus-col">
+        <img src="images\newyork.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="facilities">
+    <h1>Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur jkadfo foa</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images\basketball.png" alt="">
+        <h3>Playground For Students</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images\library.png" alt="">
+        <h3>Library</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images\cafeteria.png" alt="">
+        <h3>Cafeteria</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials">
+    <h1>Testimonials</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur jkadfo foa</p>
+    <div class="row">
+      <div class="testimonials-col">
+        <img src="images\user1.jpg" alt="">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <h3>Scarllet Jhonson</h3>
+        </div>
+      </div>
+      <div class="testimonials-col">
+        <img src="images\user2.jpg" alt="">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <h3>Scarllet Jhonson</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- cta -->
+  <section class="cta">
+    <h1>Join Our Amazing Courses online with Full<br>Anywhere in the World</h1>
+    <a class="hero-btn" href="#">Contact Us</a>
+  </section>
+  <!-- footer -->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>ut labore eiusmod tempor incididunt ut labore</p>
+</section>
+
+
+
+  <!-- javascipt for menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    funcation showMenu() {
+      navLinks.style.right = "0";
+    }
+    funcation hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
